@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block content %}
+<style>
+    .btn {
+        width: 25%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .title {
+        align-self: center;
+    }
+
+    .card {
+        padding: 10px;
+    }
+</style>
+<div class="jumbotron">
+    <h1 class="display-4">Disaster Relief Support System</h1>
+    <p class="lead">
+        D.R.S.S is an online platform that establishes a proper streamlined
+        communications between people and their respective local relief centers
+    </p>
+    <hr class="my-4" />
+    <p class="lead">
+        It is a fully fledged online support system designed to help local
+        relief center establish a proper streamlined communication channel. This
+        system allows for administrator to setup relief center database that
+        they can manage. The system help admins post wanted materials that is
+        required by their relief center. The system fully supports CRUD
+        (Create,Read,Update,Delete) operations on both the Relief Center
+        information as well as Wanted Item list.
+    </p>
+    <p class="lead"></p>
+</div>
+<div class="card">
+
+    <h4 class="title">Manage your Relief Camps. Register as an Administrator.</h4>
+    <a class="btn btn-raised btn-lg" href="{% url 'signup' %}" role="button">
+        Admin Signup
+    </a>
+    <h4 class="title">Login to DRSS</h4>
+    <a class="btn btn-raised btn-lg" href="{% url 'login' %}" role="button">
+        Admin Login
+    </a>
+
+
+</div>
+{% endblock %}
